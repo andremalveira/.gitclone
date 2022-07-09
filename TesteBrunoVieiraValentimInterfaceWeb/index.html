@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Teste De Programação De Interface - WEB</title>
+</head>
+<body>
+    <header><p><h3>Gerando uma Matriz</h3></p></header>
+    <div id="campo">
+        <div id="linha">
+            <p>Linhas: <input type="text" name="linhas" id="linhas"></p>
+        </div>
+
+        <div id="coluna">
+            <p>Colunas: <input type="text" name="colunas" id="colunas"></p>
+        </div>
+
+        <div id="gerar"><button>Gerar</button></div><span id="resetar"><button>Resetar</button></span>
+    </div>
+
+    <div id="campoDestacar">
+       <input type="checkbox" name="destacar" id="destacar"><span> Destacar diagonais</span>
+    </div>
+
+    <div id="destaqueDiagonal">
+        <p>Informe abaixo as <strong>cores</strong> das diagonais:</p>
+            <div id="cores">
+                <div><span>Principal: </span><input type="color" id="principal"></div>
+                <div><span>Secundária: </span><input type="color"  id="secundaria"><span>
+                <button id="aplicar_cor" >OK</button></span></div>
+            </div>    
+    </div>
+    <div id="matriz">
+        <table style="border: 1px solid black ;">
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
